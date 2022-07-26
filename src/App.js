@@ -41,12 +41,16 @@ const app = () => {
           </div>
           <div>
             <Routes>
-              {/* Dashboard routes */}
-              <Route path='/' element="ECommerce"/>
-              <Route path='/ecommerece' element="ECommerce"/>
-              
-              
+               {/* dashboard  */}
+                <Route path="/" element="Ecommerce" />
+                <Route path="/ecommerce" element="Ecommerce" />
 
+                {/* pages  */}
+                <Route path="/orders" element="Orders" />
+                <Route path="/employees" element="Employees" />
+                <Route path="/customers" element="Customers" />
+
+               
             </Routes>
           </div>
         </div>
