@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
@@ -38,6 +38,16 @@ const app = () => {
             <div className="fixed w-full md:static bg-main-bg dark:bg-main-dark-bg navbar ">
               <Navbar />
             </div>
+          </div>
+          <div>
+            <Routes>
+              {/* Dashboard routes */}
+              <Route path='/' element="ECommerce"/>
+              <Route path='/ecommerece' element="ECommerce"/>
+              
+              
+
+            </Routes>
           </div>
         </div>
       </BrowserRouter>
